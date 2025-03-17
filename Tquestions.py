@@ -35,7 +35,7 @@ for _ in range(3):
         # El usuario tiene 2 intentos para responder correctamente
         for intento in range(2):
                 user_answer = input("Respuesta: ")
-                if user_answer.isnumeric() and int(user_answer)-1 <= 4 and int(user_answer)-1 >= 0: #verifico si el valor ingresado es un entero y si esta en el rango de respuestas adecuado
+                if user_answer.isnumeric() and int(user_answer) - 1 < 4 and int(user_answer) - 1 > 0: #verifico si el valor ingresado es un entero y si esta en el rango de respuestas adecuado
                 # Se verifica si la respuesta es correcta
                                 user_answer = int(user_answer) - 1 #convierto el numero ingresado a integer
                                 if user_answer == correct_answers_index[question_index]:
