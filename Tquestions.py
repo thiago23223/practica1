@@ -47,11 +47,12 @@ for question, answers, correct_answers_index in question_index: #este bucle iter
                         # se muestra la respuesta correcta
                                 print("Incorrecto. La respuesta correcta es:")
                                 print(correct_answers_index + 1)
-                                if(puntaje>=0.5):
-                                        puntaje = puntaje - 0.5
+                                puntaje = puntaje - 0.5
                 else:
                         print("Respuesta no valida")
                         sys.exit(1) #finaliza el programa       
         # Se imprime un blanco al final de la pregunta
         print()
+if(puntaje < 0):
+        puntaje = 0
 print(f"su puntaje final es :{puntaje}")
